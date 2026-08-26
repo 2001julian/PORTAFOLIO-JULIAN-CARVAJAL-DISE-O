@@ -1,0 +1,207 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #111111;
+    color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 40px;
+
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.hero {
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    padding: 100px 8%;
+}
+
+.hero-background {
+    position: absolute;
+
+    font-size: 25vw;
+    font-weight: bold;
+
+    color: #242424;
+
+    left: 2%;
+    top: 20%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.small-text {
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: clamp(70px, 12vw, 180px);
+    line-height: .8;
+    letter-spacing: -8px;
+}
+
+.description {
+    max-width: 350px;
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+button {
+    margin-top: 30px;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 15px 30px;
+
+    background: #ff4d22;
+    color: white;
+
+    cursor: pointer;
+}
+
+.work {
+    padding: 150px 8%;
+}
+
+.section-number {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 60px;
+}
+
+.work h2,
+.about h2,
+.contact h2 {
+    font-size: clamp(60px, 10vw, 150px);
+    line-height: .9;
+    letter-spacing: -5px;
+    margin-bottom: 100px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px 30px;
+}
+
+.project-image {
+    height: 500px;
+
+    background: #292929;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+
+    transition: transform .5s ease;
+}
+
+.project:hover .project-image {
+    transform: scale(.97);
+}
+
+.project h3 {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.project p {
+    margin-top: 8px;
+    color: #888;
+}
+
+.about {
+    padding: 150px 8%;
+}
+
+.about > p:last-child {
+    max-width: 700px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.contact {
+    padding: 150px 8%;
+    min-height: 80vh;
+}
+
+.contact a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 20px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        letter-spacing: -4px;
+    }
+
+}
