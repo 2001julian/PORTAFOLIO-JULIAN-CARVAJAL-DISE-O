@@ -204,11 +204,13 @@ button {
         letter-spacing: -4px;
     }
 
-    .hero {
+   .hero {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
   background: #0d0d0d;
+  display: flex;
+  align-items: center;
 }
 
 .hero-img {
@@ -217,16 +219,21 @@ button {
   right: 0;
   height: 100%;
   width: auto;
+  max-width: 55%;      /* controla cuánto ocupa a la derecha */
   object-fit: cover;
-  opacity: 0.4; /* ajusta para que no compita con el texto */
+  opacity: 1;           /* ya NO baja opacidad, la quieres nítida */
   z-index: 0;
-  mix-blend-mode: luminosity; /* opcional: le da ese look en blanco y negro */
 }
 
 .hero-content {
   position: relative;
-  z-index: 1; /* esto pone el texto ENCIMA de la foto */
+  z-index: 1;            /* el texto queda ENCIMA si se solapan */
   padding: 4rem 6rem;
+  max-width: 60%;         /* evita que el texto invada el área de la foto */
+}
+
+h1 {
+  letter-spacing: -4px;
 }
 
 }
