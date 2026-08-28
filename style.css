@@ -219,7 +219,7 @@ button {
   right: 0;
   height: 100%;
   width: auto;
-  max-width: 55%;      /* controla cuánto ocupa a la derecha */
+  max-width: 40%;      /* controla cuánto ocupa a la derecha */
   object-fit: cover;
   opacity: 1;           /* ya NO baja opacidad, la quieres nítida */
   z-index: 0;
