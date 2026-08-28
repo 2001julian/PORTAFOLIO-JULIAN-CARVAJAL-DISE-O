@@ -204,4 +204,29 @@ button {
         letter-spacing: -4px;
     }
 
+    .hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #0d0d0d;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  opacity: 0.4; /* ajusta para que no compita con el texto */
+  z-index: 0;
+  mix-blend-mode: luminosity; /* opcional: le da ese look en blanco y negro */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1; /* esto pone el texto ENCIMA de la foto */
+  padding: 4rem 6rem;
+}
+
 }
