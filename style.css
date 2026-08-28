@@ -206,7 +206,7 @@ button {
 
    .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 70vh;
   overflow: hidden;
   background: #0d0d0d;
   display: flex;
