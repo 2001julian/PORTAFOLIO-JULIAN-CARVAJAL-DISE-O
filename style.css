@@ -206,7 +206,7 @@ button {
 
    .hero {
   position: relative;
-  min-height: 70vh;
+  min-height: 100vh;
   overflow: hidden;
   background: #0d0d0d;
   display: flex;
@@ -217,9 +217,9 @@ button {
   position: absolute;
   top: 0;
   right: 0;
-  height: 70%;
+  height: 100%;
   width: auto;
-  max-width: 20%;      /* controla cuánto ocupa a la derecha */
+  max-width: 60%;      /* controla cuánto ocupa a la derecha */
   object-fit: cover;
   opacity: 1;           /* ya NO baja opacidad, la quieres nítida */
   z-index: 0;
@@ -233,7 +233,7 @@ button {
 }
 
 h1 {
-  letter-spacing: -6px;
+  letter-spacing: -4px;
 }
 
 }
